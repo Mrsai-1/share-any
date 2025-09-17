@@ -105,7 +105,7 @@ export default function Sidebar({
               {isCopied ? (
                 <span className="ri-file-copy-line "></span>
               ) : (
-                <span className="ri-success-line "></span>
+                <span className="ri-file-copy-line "></span>
               )}
             </div>
           </div>
