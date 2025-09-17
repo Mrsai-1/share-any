@@ -1,0 +1,45 @@
+
+@import "tailwindcss";
+
+:root {
+  --primary-color: 28, 210, 164;
+  --secondary-color: 255, 255, 255, 0.1; /* its used */
+  --theme-primary: 28, 36, 35, 1;
+  --theme-secondary: 38, 40, 40; /* its used */
+  --text-color: 255, 255, 255;
+  --text-opacity-color: 87, 142, 134;
+  --dark-color: 0, 0, 0;
+  --danger-color: 247, 79, 81;
+  --success-color:12, 141, 17;
+  --warning-color:255 196 44;
+  --button-color:20, 30, 25;
+  --border-color:119, 124, 124,0.4;
+
+  /* spaces */
+
+  --vertical-gap-200: 2rem;
+  --vertical-gap-400: 4rem;
+  --vertical-gap-600: 6rem;
+  --vertical-gap-700: 10rem;
+  --vertical-gap-800: 13rem;
+}
+
+@theme {
+  --color-primary: rgb(var(--primary-color));
+  --color-secondary: rgba(var(--secondary-color));
+  --color-theme-primary: rgba(var(--theme-primary));
+  --color-theme-secondary: rgb(var(--theme-secondary));
+  --color-text: rgb(var(--text-color));
+  --color-text-opacity: rgb(var(--text-opacity-color));
+  --color-dark: rgb(var(--dark-color));
+  --color-danger: rgb(var(--danger-color));
+  --color-success: rgb(var(--success-color));
+  --color-warning: rgb(var(--warning-color));
+  --color-button: rgb(var(--button-color));
+  --color-border: rgba(var(--border-color));
+}
+
+body {
+  background-color: var(--color-theme-secondary);
+  color: var(--color-text);
+}
